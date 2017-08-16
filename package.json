@@ -33,6 +33,6 @@
   "dependencies": {
     "disqus": "0.1.0",
     "express": "^4.15.2",
-    "discordwebhooks": "^0.0.2"
+    "request": "^2.81.0"
   }
 }
