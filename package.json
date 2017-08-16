@@ -21,14 +21,9 @@
   "scripts": {
     "start": "node index.js"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/mit-license.php"
-    }
-  ],
+  "license": "MIT",
   "engines": {
-    "node": "0.10.x"
+    "node": ">=6.0.0"
   },
   "dependencies": {
     "disqus": "0.1.0",

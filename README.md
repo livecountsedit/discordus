@@ -17,7 +17,7 @@ DISCORDUS_DISQUS_API_KEY=[your api key]
 DISCORDUS_DISQUS_API_SECRET=[your api secret]
 DISCORDUS_DISQUS_ACCESS_TOKEN=[your access token]
 DISCORDUS_DISQUS_FORUM=[your forum's shortname]
-DISCORDUS_SLACK_WEBHOOK=[your incoming webhook's url]
+DISCORDUS_DISCORD_WEBHOOK=[your incoming webhook's url]
 ```
 
 It's possible to check for comments on multiple forums simultaneously. To do so,
@@ -39,7 +39,6 @@ Optional environment variables:
 ```
 DISCORDUS_INTERVAL=60       # Seconds between each check (60 by default)
 DISCORDUS_DISQUS_LIMIT=25   # Number of comments to check (25 by default, max 100)
-DISCORDUS_SLACK_MENTION=joe # Users to mention when notification arrives
 ```
 
 The server will every X seconds (`DISCORDUS_INTERVAL`) request the X most recent
@@ -56,10 +55,10 @@ Some more configuration options for Disqus and Discord are available in config.j
 
 This application was built using:
 * [disqus](https://github.com/hay/node-disqus)
-* [discordwebhooks](https://github.com/prixyn/discord-webhooks)
+* [request](https://github.com/request/request)
 
 ***
 
 ## License
 
-[http://jonathanwiesel.mit-license.org/](http://jonathanwiesel.mit-license.org/)
+[http://nlr.mit-license.org/](http://nlr.mit-license.org/)
