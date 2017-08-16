@@ -1,10 +1,10 @@
-var Slackus = require('./lib/slackus.js'),
+var Discordus = require('./lib/discordus.js'),
     config  = require('./config.js'),
     http = require('http');
 
 // Check if the required configuration values have been set.
 var required = [
-  'slack.webhook',
+  'discord.webhook',
   'disqus.forums',
   'disqus.authentication.api_secret',
   'disqus.authentication.api_key',
@@ -29,9 +29,9 @@ config.disqus.limit = config.disqus.limit || 25;
 config.interval = config.interval || 60;
 
 setInterval(function() {
-    http.get(process.env.SLACKUS_KEEPALIVE_URL);
+    http.get(process.env.DISCORDUS_KEEPALIVE_URL);
 }, 300000);
 
 // Start checking!
-var slackus = new Slackus(config);
-slackus.start();
+var discordus = new Discordus(config);
+discordus.start();

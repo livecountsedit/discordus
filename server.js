@@ -2,7 +2,7 @@ var express = require('express')
 var app = express()
 
 app.get('/', function (req, res) {
-  res.send('Slackus Web Dyno is live. You may want to check the Worker Dyno is enabled in the Heroku dashboard for this app.')
+  res.send('Discordus Web Dyno is live. You may want to check the Worker Dyno is enabled in the Heroku dashboard for this app.')
 })
 
 var port = process.env.PORT || 3000;

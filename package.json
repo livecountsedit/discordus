@@ -1,31 +1,19 @@
 {
-  "name": "slackus",
-  "description": "New Disqus comment notifier for Slack",
+  "name": "discordus",
+  "description": "New Disqus comment notifier for Discord",
   "version": "1.0.0",
   "author": {
-    "name": "Jonathan Wiesel",
-    "email": "jonathanwiesel@gmail.com",
-    "url": "https://github.com/jonathanwiesel"
+    "name": "André Kody Fernandes",
+    "email": "node@kdy.ch",
+    "url": "https://kdy.ch"
   },
-  "contributors": [
-    {
-      "name": "Joakim Stai",
-      "email": "joakimstai@gmail.com",
-      "url": "https://github.com/joakim"
-    },
-    {
-      "name": "Richard Pearson",
-      "email": "github@catdevnull.co.uk",
-      "url": "https://github.com/catdevnull"
-    }
-  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jonathanwiesel/slackus.git"
+    "url": "https://gitlab.com/NLRfr/discordus.git"
   },
   "keywords": [
     "disqus",
-    "slack",
+    "discord",
     "comment",
     "api",
     "notify"
@@ -45,6 +33,6 @@
   "dependencies": {
     "disqus": "0.1.0",
     "express": "^4.15.2",
-    "node-slack": "git://github.com/chuga/node-slack#e8e7a3bb8e"
+    "discordwebhooks": "^0.0.2"
   }
 }
