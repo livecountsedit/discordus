@@ -28,9 +28,11 @@ if (required.length) {
 config.disqus.limit = config.disqus.limit || 25
 config.interval = config.interval || 60
 
-setInterval(function () {
-  http.get(process.env.DISCORDUS_KEEPALIVE_URL)
-}, 300000)
+if (process.env.DISCORDUS_KEEPALIVE_URL) {
+  setInterval(function () {
+    http.get(process.env.DISCORDUS_KEEPALIVE_URL)
+  }, 300000)
+}
 
 // Start checking!
 var discordus = new Discordus(config)
