@@ -3,7 +3,6 @@ var config = module.exports = {}
 config.disqus = {}
 config.discord = {}
 
-console.log(process.env.DISCORDUS_INTERVAL)
 // Number of seconds between each check (optional, default 60).
 config.interval = process.env.DISCORDUS_INTERVAL
 
